@@ -24,7 +24,7 @@ export class Order {
       throw new Error('Document is required');
     }
 
-    if (!total) {
+    if (!total || total <= 0) {
       throw new Error('Total is required');
     }
 
